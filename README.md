@@ -8,7 +8,7 @@ This script was made just for fun in my free time
 
 # Requirements
 <ul>
-	<li> 3.9.4</li>
+	<li>Python 3.9.4</li>
 </ul>
 
 # Installation
