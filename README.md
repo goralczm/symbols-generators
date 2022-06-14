@@ -31,10 +31,10 @@ This script was made just for fun in my free time
 			<li>symbol - optional string variable, if not assigned- default value is hashtag ('#'), contains symbol which should be pyramid printed with</li>
 		</ul>
 		<br>
-		```
-		OneSidePyramid(3)<br>#<br>##<br>###
-		```
 	</li>
+	```
+		OneSidePyramid(3)<br>#<br>##<br>###
+	```
 
 	<li>
 		<b>PyramidBasedWidth(width, symbol='#', background=' ')</b> - prints pyramid of given width
@@ -45,10 +45,10 @@ This script was made just for fun in my free time
 			<li>background - optional string variable, if not assigned- default value is space (' '), contains symbol which should be pyramids background printed with</li>
 		</ul>
 		<br>
-		```
-		PyramidBasedWidth(5, '&')<br>  &  <br> &&& <br>&&&&&
-		```
 	</li>
+	```
+		PyramidBasedWidth(5, '&')<br>  &  <br> &&& <br>&&&&&
+	```
 
 	<li>
 		<b>PyramidBasedHeight(height, inverse=False, symbol='#', background=' ')</b> - prints pyramid of given height
