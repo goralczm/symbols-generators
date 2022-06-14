@@ -8,7 +8,7 @@ This script was made just for fun in my free time
 
 # Requirements
 <ul>
-	<li>Python 3.9.4</li>
+	<li> 3.9.4</li>
 </ul>
 
 # Installation
@@ -31,7 +31,7 @@ This script was made just for fun in my free time
 			<li>symbol - optional string variable, if not assigned- default value is hashtag ('#'), contains symbol which should be pyramid printed with</li>
 		</ul>
 		<br>
-		```python
+		```
 		OneSidePyramid(3)<br>#<br>##<br>###
 		```
 	</li>
@@ -45,7 +45,7 @@ This script was made just for fun in my free time
 			<li>background - optional string variable, if not assigned- default value is space (' '), contains symbol which should be pyramids background printed with</li>
 		</ul>
 		<br>
-		```python
+		```
 		PyramidBasedWidth(5, '&')<br>  &  <br> &&& <br>&&&&&
 		```
 	</li>
@@ -60,7 +60,7 @@ This script was made just for fun in my free time
 			<li>background - optional string variable, if not assigned- default value is space (' '), contains symbol which should be pyramids background printed with</li>
 		</ul>
 		<br>
-		```python
+		```
 		PyramidBasedHeight(5, True, '%')<br>%%%%%%%%%<br> %%%%%%% <br>  %%%%%  <br>   %%%   <br>    %    
 		```
 	</li>
@@ -80,7 +80,7 @@ This script was made just for fun in my free time
 			<li>background - optional string variable, if not assigned- default value is space (' '), contains symbol which should be pyramids background printed with</li>
 		</ul>
 		<br>
-		```python
+		```
 		BlackHole(128, 128, 4, 3, 1, 'circle')<br>#output visible in 'black_hole.txt' file
 		```
 	</li>
@@ -99,7 +99,7 @@ This script was made just for fun in my free time
 			<li>background - optional string variable, if not assigned- default value is space (' '), contains symbol which should be pyramids background printed with</li>
 		</ul>
 		<br>
-		```python
+		```
 		Tree(128, 2, 3.5, 2, 'circle')<br>#output visible in 'tree.txt' file
 		```
 	</li>
