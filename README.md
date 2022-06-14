@@ -31,10 +31,13 @@ This script was made just for fun in my free time
 			<li>symbol - optional string variable, if not assigned- default value is hashtag ('#'), contains symbol which should be pyramid printed with</li>
 		</ul>
 		<br>
-	</li>
-	```
+
+		```
 		OneSidePyramid(3)<br>#<br>##<br>###
-	```
+		```
+
+	</li>
+
 
 	<li>
 		<b>PyramidBasedWidth(width, symbol='#', background=' ')</b> - prints pyramid of given width
@@ -45,10 +48,12 @@ This script was made just for fun in my free time
 			<li>background - optional string variable, if not assigned- default value is space (' '), contains symbol which should be pyramids background printed with</li>
 		</ul>
 		<br>
-	</li>
-	```
+		
+		```
 		PyramidBasedWidth(5, '&')<br>  &  <br> &&& <br>&&&&&
-	```
+		```
+
+	</li>
 
 	<li>
 		<b>PyramidBasedHeight(height, inverse=False, symbol='#', background=' ')</b> - prints pyramid of given height
@@ -60,9 +65,11 @@ This script was made just for fun in my free time
 			<li>background - optional string variable, if not assigned- default value is space (' '), contains symbol which should be pyramids background printed with</li>
 		</ul>
 		<br>
+
 		```
 		PyramidBasedHeight(5, True, '%')<br>%%%%%%%%%<br> %%%%%%% <br>  %%%%%  <br>   %%%   <br>    %    
 		```
+
 	</li>
 
 	<li>
@@ -80,9 +87,11 @@ This script was made just for fun in my free time
 			<li>background - optional string variable, if not assigned- default value is space (' '), contains symbol which should be pyramids background printed with</li>
 		</ul>
 		<br>
+		
 		```
 		BlackHole(128, 128, 4, 3, 1, 'circle')<br>#output visible in 'black_hole.txt' file
 		```
+
 	</li>
 
 	<li>
@@ -99,8 +108,10 @@ This script was made just for fun in my free time
 			<li>background - optional string variable, if not assigned- default value is space (' '), contains symbol which should be pyramids background printed with</li>
 		</ul>
 		<br>
+
 		```
 		Tree(128, 2, 3.5, 2, 'circle')<br>#output visible in 'tree.txt' file
 		```
+		
 	</li>
 </ul>
