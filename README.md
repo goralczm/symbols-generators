@@ -37,8 +37,6 @@ This script was made just for fun in my free time
 		```
 
 	</li>
-
-
 	<li>
 		<b>PyramidBasedWidth(width, symbol='#', background=' ')</b> - prints pyramid of given width
 		<br>
@@ -54,7 +52,6 @@ This script was made just for fun in my free time
 		```
 
 	</li>
-
 	<li>
 		<b>PyramidBasedHeight(height, inverse=False, symbol='#', background=' ')</b> - prints pyramid of given height
 		<br>
@@ -71,7 +68,6 @@ This script was made just for fun in my free time
 		```
 
 	</li>
-
 	<li>
 		<b>BlackHole(width, height, density=4, tolerance=4, rejection=0, mode='diamond', offset=[0, 0], symbol='#', background=' ')</b> - generates txt file containing generated black hole
 		<br>
@@ -93,7 +89,6 @@ This script was made just for fun in my free time
 		```
 
 	</li>
-
 	<li>
 		<b>Tree(gridSize, density=4, tolerance=4, rejection=0, mode='diamond', symbol='#', background=' ')</b> - generates txt file containig generated tree
 		<br>
@@ -108,10 +103,9 @@ This script was made just for fun in my free time
 			<li>background - optional string variable, if not assigned- default value is space (' '), contains symbol which should be pyramids background printed with</li>
 		</ul>
 		<br>
-
+		
 		```
 		Tree(128, 2, 3.5, 2, 'circle')<br>#output visible in 'tree.txt' file
 		```
-		
 	</li>
 </ul>
