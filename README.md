@@ -31,7 +31,9 @@ This script was made just for fun in my free time
 			<li>symbol - optional string variable, if not assigned- default value is hashtag ('#'), contains symbol which should be pyramid printed with</li>
 		</ul>
 		<br>
-		<pre>OneSidePyramid(3)<br>#<br>##<br>###</pre>
+		```python
+		OneSidePyramid(3)<br>#<br>##<br>###
+		```
 	</li>
 
 	<li>
@@ -43,7 +45,9 @@ This script was made just for fun in my free time
 			<li>background - optional string variable, if not assigned- default value is space (' '), contains symbol which should be pyramids background printed with</li>
 		</ul>
 		<br>
-		<pre>PyramidBasedWidth(5, '&')<br>  &  <br> &&& <br>&&&&&</pre>
+		```python
+		PyramidBasedWidth(5, '&')<br>  &  <br> &&& <br>&&&&&
+		```
 	</li>
 
 	<li>
@@ -56,7 +60,9 @@ This script was made just for fun in my free time
 			<li>background - optional string variable, if not assigned- default value is space (' '), contains symbol which should be pyramids background printed with</li>
 		</ul>
 		<br>
-		<pre>PyramidBasedHeight(5, True, '%')<br>%%%%%%%%%<br> %%%%%%% <br>  %%%%%  <br>   %%%   <br>    %    </pre>
+		```python
+		PyramidBasedHeight(5, True, '%')<br>%%%%%%%%%<br> %%%%%%% <br>  %%%%%  <br>   %%%   <br>    %    
+		```
 	</li>
 
 	<li>
@@ -74,7 +80,9 @@ This script was made just for fun in my free time
 			<li>background - optional string variable, if not assigned- default value is space (' '), contains symbol which should be pyramids background printed with</li>
 		</ul>
 		<br>
-		<pre>BlackHole(128, 128, 4, 3, 1, 'circle')<br>#output visible in 'black_hole.txt' file</pre>
+		```python
+		BlackHole(128, 128, 4, 3, 1, 'circle')<br>#output visible in 'black_hole.txt' file
+		```
 	</li>
 
 	<li>
@@ -91,6 +99,8 @@ This script was made just for fun in my free time
 			<li>background - optional string variable, if not assigned- default value is space (' '), contains symbol which should be pyramids background printed with</li>
 		</ul>
 		<br>
-		<pre>Tree(128, 2, 3.5, 2, 'circle')<br>#output visible in 'tree.txt' file</pre>
+		```python
+		Tree(128, 2, 3.5, 2, 'circle')<br>#output visible in 'tree.txt' file
+		```
 	</li>
 </ul>
