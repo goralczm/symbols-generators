@@ -31,11 +31,7 @@ This script was made just for fun in my free time
 			<li>symbol - optional string variable, if not assigned- default value is hashtag ('#'), contains symbol which should be pyramid printed with</li>
 		</ul>
 		<br>
-
-		```
-		OneSidePyramid(3)<br>#<br>##<br>###
-		```
-
+		<pre>OneSidePyramid(3)<br>#<br>##<br>###</pre>
 	</li>
 	<li>
 		<b>PyramidBasedWidth(width, symbol='#', background=' ')</b> - prints pyramid of given width
@@ -46,11 +42,7 @@ This script was made just for fun in my free time
 			<li>background - optional string variable, if not assigned- default value is space (' '), contains symbol which should be pyramids background printed with</li>
 		</ul>
 		<br>
-		
-		```
-		PyramidBasedWidth(5, '&')<br>  &  <br> &&& <br>&&&&&
-		```
-
+		<pre>PyramidBasedWidth(5, '&')<br>  &  <br> &&& <br>&&&&&</pre>
 	</li>
 	<li>
 		<b>PyramidBasedHeight(height, inverse=False, symbol='#', background=' ')</b> - prints pyramid of given height
@@ -62,11 +54,7 @@ This script was made just for fun in my free time
 			<li>background - optional string variable, if not assigned- default value is space (' '), contains symbol which should be pyramids background printed with</li>
 		</ul>
 		<br>
-
-		```
-		PyramidBasedHeight(5, True, '%')<br>%%%%%%%%%<br> %%%%%%% <br>  %%%%%  <br>   %%%   <br>    %    
-		```
-
+		<pre>PyramidBasedHeight(5, True, '%')<br>%%%%%%%%%<br> %%%%%%% <br>  %%%%%  <br>   %%%   <br>    %    </pre>
 	</li>
 	<li>
 		<b>BlackHole(width, height, density=4, tolerance=4, rejection=0, mode='diamond', offset=[0, 0], symbol='#', background=' ')</b> - generates txt file containing generated black hole
@@ -83,11 +71,7 @@ This script was made just for fun in my free time
 			<li>background - optional string variable, if not assigned- default value is space (' '), contains symbol which should be pyramids background printed with</li>
 		</ul>
 		<br>
-		
-		```
-		BlackHole(128, 128, 4, 3, 1, 'circle')<br>#output visible in 'black_hole.txt' file
-		```
-
+		<pre>BlackHole(128, 128, 4, 3, 1, 'circle')<br>#output visible in 'black_hole.txt' file</pre>
 	</li>
 	<li>
 		<b>Tree(gridSize, density=4, tolerance=4, rejection=0, mode='diamond', symbol='#', background=' ')</b> - generates txt file containig generated tree
@@ -103,9 +87,6 @@ This script was made just for fun in my free time
 			<li>background - optional string variable, if not assigned- default value is space (' '), contains symbol which should be pyramids background printed with</li>
 		</ul>
 		<br>
-		
-		```
-		Tree(128, 2, 3.5, 2, 'circle')<br>#output visible in 'tree.txt' file
-		```
+		<pre>Tree(128, 2, 3.5, 2, 'circle')<br>#output visible in 'tree.txt' file</pre>
 	</li>
 </ul>
