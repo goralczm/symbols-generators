@@ -16,6 +16,7 @@ This script was made just for fun in my free time
 	<li>
 		Download repository
 		<br>
+		<br>
 		<pre>git clone https://github.com/goralczm/symbols-generators</pre>
 	</li>
 </ol>
