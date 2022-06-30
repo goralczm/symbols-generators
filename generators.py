@@ -46,7 +46,7 @@ def PyramidBasedHeight(height, inverse=False, symbol='#', background=' '):
 		rowIndex = (rowIndex + 2) if not inverse else (rowIndex - 2)
 		print(rowContent)
 
-def BlackHole(width, height, density=4, tolerance=4, rejection=0, mode='diamond', offset=[0, 0], symbol='#', background=' '):
+def BlackHole(width, height, density=4, tolerance=4, rejection=0, mode='diamond', offset=[0, 0], symbol='#', background=' ', secondarySymbol=''):
 	with open('black_hole.txt', 'w') as file:
 		center = [width//2, height//2]
 		for row in range(width):
@@ -57,24 +57,30 @@ def BlackHole(width, height, density=4, tolerance=4, rejection=0, mode='diamond'
 					rowIndex = row if row <= center[1] else height - 1 - row
 					distanceFromCenter = abs((min(width, height)) - 1 - columnIndex - rowIndex)
 				elif ('circle' in mode):
-					coords = [row, column]
-					distanceFromCenter = CalculateDistance(coords, [center[0] + offset[1], center[1] - offset[0]])
+					location = [row, column]
+					distanceFromCenter = CalculateDistance(location, [center[0] + offset[1], center[1] - offset[0]])
 				if ('matrix' in mode):
-					rowContent += ' '+str(distanceFromCenter)
+					rowContent += ' ' + str(distanceFromCenter)
 					continue
 
-				randomIndex = random.randint(0, distanceFromCenter)		
-				if (randomIndex <= (min(width, height))//16*density and distanceFromCenter < min(width, height) // 8 * tolerance):
-					if (rejection > 0):
-						rejectionRate = 100//(10*rejection)
-						if ((random.randint(0, rejectionRate)) != rejectionRate):
-							rowContent += ' '+symbol
+				randomIndex = random.randint(0, distanceFromCenter) #Determines if 'pixel' should be instantiated
+				minValToCreate = (min(width, height)) // 16 * density
+				minDistance = min(width, height) // 8 * tolerance
+				if (randomIndex <= minValToCreate):
+					if (distanceFromCenter < minDistance):
+						if (rejection > 0):
+							maxRejectionValue = 100 // (10 * rejection) // ((distanceFromCenter + 5) // 4)
+							randomRejectionValue = (random.randint(0, maxRejectionValue))
+							if (randomRejectionValue != maxRejectionValue):
+								rowContent += ' ' + symbol
+							else:
+								rowContent += ' ' + secondarySymbol
 						else:
-							rowContent += ' '+background
+							rowContent += ' ' + symbol
 					else:
-						rowContent += ' '+symbol
+						rowContent += ' ' + secondarySymbol
 				else:
-					rowContent += ' '+background
+					rowContent += ' ' + background
 			file.write(rowContent+'\n')
 
 def Tree(gridSize, density=4, tolerance=4, rejection=0, mode='diamond', symbol='#', background=' '):
@@ -103,3 +109,5 @@ def Tree(gridSize, density=4, tolerance=4, rejection=0, mode='diamond', symbol='
 				else:
 					rowContent += ' '+background
 			file.write(rowContent+'\n')
+
+BlackHole(128, 128, 1.5, 2, 2, 'circle', [0, 0], '#', ' ', '.')
